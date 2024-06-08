@@ -1,1 +1,244 @@
+body {
+    font-family: sans-serif;
+}
+.logo{
+    width: 200px;
+    height: 53px;
+}
 
+header img{
+    text-align: left;
+    display: block;
+}
+
+nav {
+    border-top: 3px solid rgb(11, 165, 67);
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px solid rgb(11, 165, 67);
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic);
+* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+}
+
+body {
+		font-family: 'Roboto', Arial, sans-serif;
+		background-color: #ffffff;
+		overflow-x: hidden;
+		text-align: center;
+}
+
+header > nav > div {
+		float: left;
+		width: 12.5%;
+		height: 100%;
+		position: relative;
+}
+
+header > nav > div > a {
+		text-align: center;
+		width: 100%;
+		height: 100%;
+		display: block;
+		line-height: 50px;
+		color: #000000;
+		transition: background-color 0.2s ease;
+		text-transform: uppercase;
+		
+}
+header > nav > div:hover > a {
+		color: rgba(6, 192, 37, 0.722);
+		cursor: pointer;
+}
+
+header > nav > div > div {
+		display: none;
+		overflow: hidden;
+		background-color: rgb(246, 245, 234);
+		min-width: 200%;
+		position: absolute;
+		box-shadow: 0 5px 10px rgb(36, 28, 28);
+		padding: 10px;
+		
+}
+
+header > nav > div:not(:first-of-type):not(:last-of-type) > div {
+		left: -50%;
+		border-radius: 0 0 3px 3px;
+}
+header > nav > div:first-of-type > div {
+		left: 0;
+		border-radius: 0 0 3px 0;
+}
+
+header > nav > div:last-of-type > div {
+		right: 0;
+		border-radius: 0 0 0 3px;
+}
+
+header > nav > div:hover > div {
+		display: block;
+}
+
+header > nav > div > div > a {
+		display: block;
+		float: left;
+		padding: 8px 10px;
+		width: 46%;
+		margin: 2%;
+		text-align: center;
+		background-color: rgb(236, 233, 203);
+		color: #0f0000;
+		border-radius: 2px;
+		transition: background-color 0.2s ease;
+}
+header > nav > div > div > a:hover {
+		background-color: rgba(6, 192, 37, 0.722);
+		cursor: pointer;
+}
+
+h1 {
+		margin-top: 50px;
+		font-weight: 100;
+}
+
+p {
+		color: #000000;
+		font-weight: 300;
+}
+
+.ad-menu li {
+  display: inline-block;
+  background: #c2f272;
+  font-size: 10px;
+  text-align: center;
+  width: 16%;
+}
+
+.ad-menu li a {
+  display: block;
+  text-decoration: none;
+  color: rgb(20, 0, 122);
+  padding: 5px 5px 5px 5px;
+  width: 100%
+}
+
+.ad-menu li:hover{
+background-color: rgb(31, 139, 201);
+}
+
+@media screen and (max-width: 920px){
+  header > nav > div > a{
+    width: 33%;
+  }
+
+}
+
+@media screen and (max-width: 460px){
+  header > nav > div > a{
+    width: 80%;
+  }
+}
+body {
+    font-family: sans-serif;
+}
+.modal{
+    background-color: white;
+    margin: 10px auto;
+    max-width: 500px;
+    padding: 10px;
+    text-align: center;
+}
+
+.images{
+    margin-top: 10px;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+	margin: auto;
+}
+
+.slide-one{
+    width: 600px;
+    height: 400px;
+    transform: translateX(-50px);;
+}
+
+.slide-two{
+    width: 600px;
+    height: 400px;
+    transform: translateX(-50px);
+}
+
+.slide-three{
+    width: 600px;
+    height: 400px;
+    transform: translateX(-50px);
+}
+
+[class*="slide-"] {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    transition: opacity linear 0.5s;
+}
+
+.to-one:checked ~ .images .slide-one,
+.to-two:checked ~ .images .slide-two,
+.to-three:checked ~ .images .slide-three{
+    opacity: 1.0;
+}
+
+div {
+  text-align: center;
+  }
+
+footer img {
+width: 100%;
+height: 30%;
+}
+
+main img {
+width: 100%;
+height: 15px;
+}
+
+.vet {
+width: 100%;
+height: 15px;
+}
+
+.teem {
+width: 100%;
+height: 400px; 
+}
+
+.pets {
+  width: 100%;
+height: 30%;  
+}
+
+footer {
+    background-image: linear-gradient(to right, #4bfa4bc2, #fbf834c2, #eb2c29c4);
+    padding: 10px;
+}
+
+footer p {
+    background-color: #f1f1f1;
+    padding: 5px;
+}

@@ -62,3 +62,20 @@ footer {
     font-size: 14px;
     color: rgb(45, 42, 42);
 }
+
+.add-to-cart {
+    display: block;
+    background-color: #f84747;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 15px;
+    text-decoration: none;
+    width: 95%;
+}
+
+.add-to-cart:hover {
+    background-color: #c81616e1;
+}
